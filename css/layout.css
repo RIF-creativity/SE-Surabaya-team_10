@@ -10,6 +10,7 @@ body {
     font-family: sans-serif;
     width: 100vw;
     height: 100vh;
+    color: var(--secondary);
 }
 
 header {
@@ -20,6 +21,8 @@ nav {
     display: flex;
     height: 7vh;
     align-items: center;
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 nav #logo {
@@ -33,6 +36,7 @@ nav #logo {
     justify-content: space-between;
     align-items: center;
     height: 3vh;
+    font-size: 3vh;
     background-color: var(--primary);
     color: var(--secondary);
 
@@ -71,6 +75,7 @@ ul {
 #menu button {
     border: none;
     color: var(--secondary);
+    font-size: 1vw;
     background-color: rgba(0, 0, 0, 0);
     width: 8vw;
     margin-bottom: 10px;
@@ -86,6 +91,12 @@ ul {
     color: var(--primary);
     border: none;
     box-shadow: 0 2px rgba(0, 0, 0, 0.104);
+}
+
+#menu .btn-on:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-shadow: 0 0 15px var(--primary);
 }
 
 #contents {
