@@ -11,10 +11,12 @@ body {
     width: 100vw;
     height: 100vh;
     color: var(--secondary);
+    overflow-x: hidden;
 }
 
 header {
     height: 10vh;
+    position: fixed;
 }
 
 nav {
@@ -35,6 +37,7 @@ nav #logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
     height: 3vh;
     font-size: 3vh;
     background-color: var(--primary);
@@ -43,10 +46,11 @@ nav #logo {
 }
 
 #description h6 {
-    margin: 0 10px 0 10px;
+    margin: 0 20px 0 20px;
 }
 
 main {
+    padding-top: 10vh;
     display: flex;
     height: 90vh;
     flex-wrap: wrap;
@@ -55,6 +59,7 @@ main {
 }
 
 #menu {
+    position: fixed;
     width: 9vw;
     display: flex;
     background-color: var(--bg-primary);
@@ -105,7 +110,6 @@ ul {
     min-height: 90vh;
     flex-wrap: wrap;
     align-content: space-between;
-    overflow-y: scroll;
 }
 
 #content {
@@ -121,6 +125,7 @@ footer {
 }
 
 #horizontal {
+    margin-left: 9vw;
     background-color: var(--secondary);
     width: 0.2vw;
 }
